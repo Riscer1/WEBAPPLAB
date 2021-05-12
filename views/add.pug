@@ -1,0 +1,10 @@
+extends layout
+block content
+    h1 Dodawanie 
+    if message!=''
+        span #{message}
+    form(method="post")
+        input(name="name" placeholder="Nazwa przedmiotu" type="text" required)
+        input(name="note" placeholder="Ocena" type="text" required)
+        button(type="submit") Wyślij
+
